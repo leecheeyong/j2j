@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(209, 209, 209);
+    align-items: center;
+}
+
+h1 {
+    color: rgb(104, 195, 255);
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 120px;
+    letter-spacing: 0.2em;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: typing 2.5s steps(30, end), step-end infinit, blink 6s infinite;
+}
+
+p {
+    color: #a7dcff;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    animation: blink 6s infinite;
+}
+
+span {
+    color: white;
+    font-size: 3em;
+}
+.box {
+    margin-left: 34em;
+    margin-top: 12em;
+    animation: rotating 3.5s infinite;
+    background-color: aliceblue;
+    max-width: 20em;
+    height: 20em;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
